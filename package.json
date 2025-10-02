@@ -1,34 +1,35 @@
 {
-  "name": "restaurant-deal-model",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "test": "vitest",
-    "cf:build": "next-on-pages",
-    "cf:deploy": "wrangler pages deploy .vercel/output/static --project-name=le-macro"
-  },
-  "dependencies": {
-    "clsx": "2.1.0",
-    "next": "14.1.0",
-    "papaparse": "5.4.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "recharts": "2.8.0"
-  },
-  "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.16",
-    "@types/node": "20.11.19",
-    "@types/papaparse": "^5.3.16",
-    "@types/react": "18.2.43",
-    "@types/react-dom": "18.2.17",
-    "autoprefixer": "10.4.16",
-    "postcss": "8.4.35",
-    "tailwindcss": "3.4.1",
-    "typescript": "5.3.3",
-    "vitest": "1.2.2",
-    "wrangler": "^4.41.0"
-  }
+    "name":  "restaurant-deal-model",
+    "version":  "0.1.0",
+    "private":  true,
+    "scripts":  {
+                    "build":  "next build",
+                    "start":  "next start",
+                    "lint":  "next lint",
+                    "test":  "vitest",
+                    "cf:build":  "next-on-pages",
+                    "cf:deploy":  "wrangler pages deploy .vercel/output/static --project-name=le-macro"
+                },
+    "dependencies":  {
+                         "clsx":  "2.1.0",
+                         "next":  "15.5.2",
+                         "papaparse":  "5.4.1",
+                         "react":  "18.2.0",
+                         "react-dom":  "18.2.0",
+                         "recharts":  "2.8.0"
+                     },
+    "devDependencies":  {
+                            "@cloudflare/next-on-pages":  "1.13.15",
+                            "@types/node":  "20.11.19",
+                            "@types/papaparse":  "^5.3.16",
+                            "@types/react":  "18.2.43",
+                            "@types/react-dom":  "18.2.17",
+                            "autoprefixer":  "10.4.16",
+                            "postcss":  "8.4.35",
+                            "tailwindcss":  "3.4.1",
+                            "typescript":  "5.3.3",
+                            "vitest":  "1.2.2",
+                            "wrangler":  "^4.41.0"
+                        }
 }
+
