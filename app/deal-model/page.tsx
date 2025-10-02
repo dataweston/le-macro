@@ -235,8 +235,8 @@ export default function DealModelPage() {
   const manualMode = inputs.subsMode === "manual";
 
   return (
-    <main className="flex flex-col gap-6 p-6 lg:flex-row">
-      <ScrollArea className="h-[calc(100vh-3rem)] w-full max-w-md rounded-lg border border-border bg-background p-4">
+    <main className="grid gap-6 p-6 lg:grid-cols-[minmax(26rem,_40vw)_minmax(0,1fr)] 2xl:grid-cols-[minmax(30rem,_45vw)_minmax(0,1fr)]">
+      <ScrollArea className="h-[calc(100vh-3rem)] w-full rounded-lg border border-border bg-background p-4 lg:max-w-none lg:min-w-[26rem] 2xl:min-w-[30rem]">
         <div className="space-y-6">
           <section className={sectionClass}>
             <h2 className="text-xl font-semibold">Timing</h2>
@@ -395,7 +395,7 @@ export default function DealModelPage() {
         </div>
       </ScrollArea>
 
-      <div className="flex-1 space-y-6">
+      <div className="space-y-6 lg:min-w-0">
         <div className="grid gap-4 md:grid-cols-3">
           {summaryCards.map((item) => (
             <Card key={item.label}>
