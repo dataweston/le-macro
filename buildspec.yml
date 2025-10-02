@@ -1,0 +1,30 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Installing dependencies"
+      - npm ci
+  build:
+    commands:
+      - echo "Building Next.js application"
+      - npm run build
+  post_build:
+    commands:
+      - echo "Packaging build artifacts"
+      - mkdir -p build_artifact
+      - cp package.json package-lock.json next.config.mjs build_artifact/
+      - cp -r .next build_artifact/
+      - if [ -d public ]; then cp -r public build_artifact/; fi
+      - if [ -d app ]; then cp -r app build_artifact/app; fi
+      - if [ -d src ]; then cp -r src build_artifact/src; fi
+      - cd build_artifact
+      - zip -r ../next-app.zip .
+artifacts:
+  files:
+    - next-app.zip
+  discard-paths: yes
+cache:
+  paths:
+    - node_modules/**/*
