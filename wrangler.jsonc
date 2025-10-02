@@ -1,7 +1,6 @@
 {
   "name": "le-macro",
   "compatibility_date": "2025-10-02",
-  "assets": {
-    "directory": ".vercel/output/static"
-  }
+  "pages_build_output_dir": ".vercel/output/static"
 }
+
