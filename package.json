@@ -8,7 +8,7 @@
                     "lint":  "next lint",
                     "test":  "vitest",
                     "cf:build":  "next-on-pages",
-                    "cf:deploy":  "wrangler pages deploy .vercel/output/static --project-name=le-macro"
+                    "cf:deploy":  "npm run cf:build && wrangler pages deploy .vercel/output/static --project-name=le-macro"
                 },
     "dependencies":  {
                          "clsx":  "2.1.0",
@@ -32,4 +32,5 @@
                             "wrangler":  "^4.41.0"
                         }
 }
+
 
